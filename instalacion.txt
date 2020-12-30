@@ -1,0 +1,22 @@
+******TODAS LAS LINEAS EN ESTE ARCHIVO QUE COMIENZAN CON "$" SE DEBEN EJECUTAR EN LA TERMINAL*******
+
+1) Sublime:
+	-primero tenemos que instalar snap
+		$ sudo apt install snapd
+	-instalación de sublime (con snap)
+		$ sudo snap install sublime-text --classic
+
+2)	Visual Studio Code (vscode):
+	-instalación de vscode (con snap)
+		$ sudo snap install code --classic
+
+3) pip:
+	-instalación de pip3
+		$ sudo apt install python3-pip
+
+4) jupyter notebook
+	-instalación usando pip
+		$ pip install jupyterlab
+		o (si no funciona la anterior)
+		$ pip3 install jupyterlab
+

@@ -1,0 +1,19 @@
+**** PASOS PARA CREAR UN REPOSITORIO LOCAL Y MANTENER EL CONTROL DE VERSIONES CON GIT USANDO DE REPOSITORIO REMOTO GITHUB ***
+1- crear carpera
+	$ mkdir <monbre_carpeta>
+2.- crear un repositorio vacío git (solo se hace una vez)
+	$ git init
+3.- luego de crear un archivo .py o .ipynb y guardarlo en la carpeta anteriormente creada, agregamos los archvos al índice de git (el . agrega todos los archivos dentro de la carpeta)
+	$ git add .
+4.- Guardar los cambios al repositorio local
+	$ git commit -m "<mensaje_de_commit>"
+5.- Actualizamos el repo remoto en github
+	$ git push origin <nombre_de_la_rama>
+6.- si nos pide las credenciales de github debemos ingresar el nombre de usuario y contraseña.
+
+Nota 1: para no escribir siempre las credenciales de github cuando hacemos push, podemos guardarlas localmente:
+	$ git config --global credential.helper store
+Nota 2: los pasos 3 al 5 se debe hacer siempre para actualizar el repositorio y en ese orden:
+	-agregar archivos al índice
+	-guardar los cambios en local
+	-actualzar repositorio en github.
