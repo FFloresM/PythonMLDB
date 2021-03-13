@@ -14,3 +14,20 @@ class Juez(models.Model):
 
     class Meta:
         verbose_name_plural = 'Jueces'
+
+class TipoDeAudiencia(models.Model):
+    tipo_audiencia_choices = [
+        ('preparatoria', "A. PREPARATORIA"),
+        ('juicio', 'A. DE JUICIO'),
+        ('especial', 'ESPECIAL / INCIDENTAL / UNICA'),
+        ('continuacion juicio', 'CONTINUACIÓN JUICIO'),
+        ('continuacion preparatoria', 'CONTINUACIÓN PREPARATORIA'),
+        ('continuacion especial','CONTINUACION ESPECIAL/INCIDENTAL'),
+        ('inmediata','AUDIENCIA INMEDIATA'),
+    ]
+    tipo = models.CharField(max_length=40, choices=tipo_audiencia_choices)
+    bloques = models.IntegerField(default=0) #numero de bloques
+    duracion_real = models.DateTimeField(null=True, blank=True)
+
+    def __str__(self):
+        return self.tipo

@@ -1,4 +1,5 @@
 from django.contrib import admin
-from estadisticas.models import Juez
+from .models import Juez, TipoDeAudiencia
 
 admin.site.register(Juez)
+admin.site.register(TipoDeAudiencia)
