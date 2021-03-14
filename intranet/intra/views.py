@@ -1,6 +1,6 @@
-from django.http import HttpResponse
-
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("Mi primera app Intranet")
+    var = "hola mundo"
+    return render(request, "intra/base.html", {"hola": var})
     
