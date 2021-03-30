@@ -21,7 +21,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Default</a>
                     <li class="nav-item">
-                        <a class="navbar-link" href="#">Apps</a>
+                        <a class="navbar-link" href="{% url 'logout' %}?next={{request.path}}">Cerrar sesión</a>
                     </li>
                 </div>
             </nav>
