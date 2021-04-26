@@ -3,8 +3,16 @@
     Formulariom de Entrada
 {% endblock title %}
 {% block contenido %}
-<form method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Save">
-</form>
+
+<div class="container-lg">
+    <h3>
+        Formulario de entrada
+    </h3>
+    <br>
+    <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        {{ form}}
+        <br>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</div>
 {% endblock contenido %}

@@ -6,5 +6,5 @@ app_name = 'intra'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('entrada/', views.OficioEntradaCreateView.as_view(), name='formulario-entrada'),
+    path('entrada/', views.upload_file, name='formulario-entrada'),
 ]
